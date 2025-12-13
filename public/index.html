@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoMove - Plataforma de movilidad sostenible con alquiler de bicicletas y scooters eléctricos en Lima">
+    <meta name="keywords" content="movilidad sostenible, bicicletas eléctricas, scooters, eco-friendly, Lima, transporte verde">
+    <meta name="author" content="U202012345">
+    <title>EcoMove - Movilidad Sostenible</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <!-- Intro Overlay -->
+    <div class="intro-overlay" id="intro" role="presentation" aria-hidden="true">
+        <div class="intro-content">
+            <div class="logo-container" style="margin-bottom: 40px;">
+                <i class="fas fa-leaf" style="font-size: 120px; color: #82AC26;"></i>
+                <h1 style="color: white; font-size: 3rem; margin-top: 20px; font-family: 'Roboto', sans-serif;">EcoMove</h1>
+            </div>
+            <div class="intro-loader">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="#home" aria-label="EcoMove - Inicio">
+                    <i class="fas fa-leaf" style="font-size: 32px; color: #82AC26;"></i>
+                    <span style="margin-left: 10px; font-weight: 700; font-size: 1.5rem; color: #82AC26;">EcoMove</span>
+                </a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="#nosotros" class="nav-link" role="menuitem">Nosotros</a></li>
+                <li role="none"><a href="#servicios" class="nav-link" role="menuitem">Servicios</a></li>
+                <li role="none"><a href="#impacto" class="nav-link" role="menuitem">Impacto</a></li>
+                <li role="none"><a href="#como-funciona" class="nav-link" role="menuitem">¿Cómo funciona?</a></li>
+                <li class="language-selector" role="none">
+                    <button class="language-btn" id="languageBtn" aria-label="Seleccionar idioma" aria-haspopup="true" aria-expanded="false">
+                        <span class="flag"><img src="https://flagcdn.com/w40/es.png" alt="Bandera de España"></span>
+                        <span id="currentLang">Español</span>
+                        <span class="arrow">▼</span>
+                    </button>
+                    <ul class="language-dropdown" id="languageDropdown" role="menu" aria-label="Opciones de idioma">
+                        <li role="none"><a href="#" data-lang="es" role="menuitem"><span class="flag"><img src="https://flagcdn.com/w40/es.png" alt="ES"></span> Español</a></li>
+                        <li role="none"><a href="#" data-lang="en" role="menuitem"><span class="flag"><img src="https://flagcdn.com/w40/gb.png" alt="GB"></span> English</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menú de navegación" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" role="banner">
+        <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=1920&h=1080&fit=crop" 
+             alt="Persona en bicicleta eléctrica en la ciudad" 
+             class="hero-image">
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">ECOMOVE</h1>
+            <p class="hero-subtitle">Movilidad sostenible para un futuro verde,<br>Viaja eco-friendly, viaja con EcoMove</p>
+            <a href="#servicios" class="hero-btn">Empezar Ahora</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="servicios" role="region" aria-labelledby="services-title">
+        <div class="container">
+            <h2 class="section-title" id="services-title">¿Buscas movilidad sostenible?</h2>
+            <p class="section-subtitle">Encuentra la mejor opción eco-friendly para moverte</p>
+            
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <i class="fas fa-bicycle" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <h3 class="feature-title">Bicicletas Eléctricas</h3>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <i class="fas fa-map-marked-alt" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <h3 class="feature-title">Rutas Optimizadas</h3>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <i class="fas fa-leaf" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <h3 class="feature-title">Impacto Ecológico</h3>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About App Section -->
+    <section class="about-app-section" id="nosotros" role="region" aria-labelledby="about-title">
+        <div class="container">
+            <h2 class="section-title" id="about-title">Acerca de la Aplicación</h2>
+            
+            <div class="about-app-content">
+                <div class="about-app-text">
+                    <h3>EcoMove</h3>
+                    <p>Creemos que moverse por tu ciudad no debería dañar el planeta. Por eso integramos servicios de movilidad sostenible en Lima, ofreciendo alquiler de bicicletas y scooters eléctricos con rutas optimizadas eco-friendly. Nuestro panel de impacto ambiental te muestra el CO₂ que ahorras en cada viaje. Encuentra estaciones disponibles en tiempo real, visualiza tarifas y únete a eventos de educación ambiental. Confía en nosotros para moverte de forma consciente y contribuir a un futuro más verde.</p>
+                    
+                    <div class="about-app-features">
+                        <div class="about-feature-item">
+                            <div class="feature-badge" aria-hidden="true">1</div>
+                            <span>Movilidad verde</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="feature-badge" aria-hidden="true">2</div>
+                            <span>Cero emisiones</span>
+                        </div>
+                    </div>
+
+                    <div class="app-download-buttons">
+                        <a href="#" class="app-store-btn" aria-label="Descargar en App Store">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Disponible en App Store">
+                        </a>
+                        <a href="#" class="google-play-btn" aria-label="Descargar en Google Play">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponible en Google Play">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="about-app-mockup">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=800&fit=crop" 
+                         alt="Persona usando la app EcoMove en su teléfono móvil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="join-section" id="impacto" role="region" aria-labelledby="impact-title">
+        <div class="container">
+            <h2 class="section-title" id="impact-title">Impacto Ecológico Real</h2>
+            <p class="section-subtitle">Estadísticas de nuestra comunidad sostenible</p>
+            
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <i class="fas fa-tree" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <h3 class="feature-title">500 Toneladas CO₂ Ahorradas</h3>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <i class="fas fa-users" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <h3 class="feature-title">50,000 Usuarios Activos</h3>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">
+                        <i class="fas fa-route" style="font-size: 60px; color: white;"></i>
+                    </div>
+                    <h3 class="feature-title">1 Millón de KM Recorridos</h3>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonios" role="region" aria-labelledby="testimonials-title">
+        <div class="container">
+            <h2 class="section-title" id="testimonials-title">¿Qué dicen nuestros usuarios?</h2>
+            
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de María Torres">
+                    </div>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-name">María Torres</h4>
+                        <p class="testimonial-role">Estudiante</p>
+                        <p class="testimonial-text">"EcoMove cambió mi forma de moverme por Lima. Ahora voy a la universidad en bicicleta eléctrica y ahorro dinero mientras cuido el planeta"</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de Carlos Ruiz">
+                    </div>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-name">Carlos Ruiz</h4>
+                        <p class="testimonial-role">Profesional</p>
+                        <p class="testimonial-text">"Las rutas optimizadas me ayudan a llegar más rápido al trabajo. Ver mi impacto ambiental positivo es muy motivador"</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto de Ana Pérez">
+                    </div>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-name">Ana Pérez</h4>
+                        <p class="testimonial-role">Emprendedora</p>
+                        <p class="testimonial-text">"Uso los scooters eléctricos para mis reuniones en el centro. Es práctico, económico y sostenible"</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Foto de Jorge Mendoza">
+                    </div>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-name">Jorge Mendoza</h4>
+                        <p class="testimonial-role">Freelancer</p>
+                        <p class="testimonial-text">"La disponibilidad en tiempo real de las estaciones es genial. Siempre encuentro un vehículo cerca"</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Foto de Lucía Castro">
+                    </div>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-name">Lucía Castro</h4>
+                        <p class="testimonial-role">Diseñadora</p>
+                        <p class="testimonial-text">"Los eventos de educación ambiental me ayudaron a entender mi huella de carbono. Ahora soy una usuaria comprometida"</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-photo">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Foto de Roberto Silva">
+                    </div>
+                    <div class="testimonial-content">
+                        <h4 class="testimonial-name">Roberto Silva</h4>
+                        <p class="testimonial-role">Ingeniero</p>
+                        <p class="testimonial-text">"EcoMove es la mejor solución de movilidad sostenible en Lima. Tarifas justas y servicio excelente"</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section" id="como-funciona" role="region" aria-labelledby="how-title">
+        <div class="container">
+            <h2 class="section-title" id="how-title">¿Cómo Funciona?</h2>
+            <p class="section-subtitle">Comienza tu viaje sostenible en 3 simples pasos</p>
+            
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-number" aria-hidden="true">1</div>
+                    <div class="step-icon" aria-hidden="true">
+                        <i class="fas fa-mobile-alt" style="font-size: 50px; color: white;"></i>
+                    </div>
+                    <h3 class="step-title">Descarga la App</h3>
+                    <p class="step-description">Disponible para iOS y Android. Regístrate con tu email o redes sociales</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-number" aria-hidden="true">2</div>
+                    <div class="step-icon" aria-hidden="true">
+                        <i class="fas fa-map-marker-alt" style="font-size: 50px; color: white;"></i>
+                    </div>
+                    <h3 class="step-title">Encuentra un Vehículo</h3>
+                    <p class="step-description">Usa el mapa para ubicar bicicletas y scooters cerca de ti en tiempo real</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-number" aria-hidden="true">3</div>
+                    <div class="step-icon" aria-hidden="true">
+                        <i class="fas fa-qrcode" style="font-size: 50px; color: white;"></i>
+                    </div>
+                    <h3 class="step-title">Escanea y Viaja</h3>
+                    <p class="step-description">Escanea el código QR, desbloquea tu vehículo y comienza tu viaje eco-friendly</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contacto" role="region" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 class="section-title" id="contact-title">Contáctanos</h2>
+            
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm" novalidate aria-label="Formulario de contacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            class="form-control"
+                            required
+                            minlength="3"
+                            maxlength="100"
+                            aria-required="true"
+                            aria-describedby="nombreError"
+                        >
+                        <span class="error-message" id="nombreError" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-control"
+                            required
+                            aria-required="true"
+                            aria-describedby="emailError"
+                        >
+                        <span class="error-message" id="emailError" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono" 
+                            class="form-control"
+                            required
+                            pattern="[0-9]{9}"
+                            maxlength="9"
+                            aria-required="true"
+                            aria-describedby="telefonoError"
+                        >
+                        <span class="error-message" id="telefonoError" role="alert"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Mensaje</label>
+                        <textarea 
+                            id="asunto" 
+                            name="asunto" 
+                            class="form-control"
+                            rows="5"
+                            required
+                            minlength="10"
+                            maxlength="500"
+                            aria-required="true"
+                            aria-describedby="asuntoError"
+                        ></textarea>
+                        <span class="error-message" id="asuntoError" role="alert"></span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+
+                <div class="contact-image">
+                    <img src="assets/images/contact-mockup.png" 
+                         alt="Mockup de la aplicación móvil EcoMove mostrando funcionalidades">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-leaf" style="font-size: 48px; color: #82AC26;"></i>
+                    <span style="font-size: 1.8rem; font-weight: 700; color: #82AC26; margin-left: 10px;">EcoMove</span>
+                </div>
+
+                <div class="footer-info">
+                    <p><strong>Email:</strong> contacto@ecomove.pe</p>
+                    <p><strong>Dirección:</strong> Av. Javier Prado Este 456, San Isidro, Lima</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#politica">Política de privacidad</a></li>
+                        <li><a href="#preguntas">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook" aria-label="Facebook de EcoMove">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon instagram" aria-label="Instagram de EcoMove">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon twitter" aria-label="Twitter de EcoMove">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-apps">
+                    <h4>App Móvil</h4>
+                    <div class="app-store-buttons">
+                        <a href="#" class="footer-app-btn" aria-label="Descargar en App Store">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Disponible en App Store">
+                        </a>
+                        <a href="#" class="footer-app-btn" aria-label="Descargar en Google Play">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponible en Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            const intro = document.getElementById('intro');
+            const body = document.body;
+            
+            body.style.overflow = 'hidden';
+            
+            setTimeout(function() {
+                intro.style.display = 'none';
+                body.style.overflow = 'auto';
+                window.scrollTo(0, 0);
+            }, 3800);
+        });
+        
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+    </script>
+    
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>
